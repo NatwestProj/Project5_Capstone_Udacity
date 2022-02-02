@@ -111,7 +111,7 @@ jobs:
 workflows:
   default:
     jobs:
-      - install_lint
+      - install_lint:
       - lint:
           requires: [install]
       - build-image:
